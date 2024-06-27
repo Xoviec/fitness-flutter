@@ -12,7 +12,7 @@ class CategoryModel{
     required this.boxColor
   }); 
 
-  static List<CategoryModel> getCategories(){
+  static  List<CategoryModel> getCategories(){
     List<CategoryModel> categories = [];
 
     categories.add(
@@ -27,7 +27,7 @@ class CategoryModel{
       CategoryModel(
         name: 'Cake', 
         iconPath: 'assets/icons/pancakes.svg', 
-        boxColor: Color(0xff92A3FD) 
+        boxColor: Color.fromARGB(255, 161, 67, 182) 
         )
     ); 
 
@@ -43,7 +43,7 @@ class CategoryModel{
       CategoryModel(
         name: 'Smoothies', 
         iconPath: 'assets/icons/orange-snacks.svg', 
-        boxColor: Color(0xff92A3FD) 
+        boxColor: Color.fromARGB(255, 161, 67, 182) 
         )
     ); 
     

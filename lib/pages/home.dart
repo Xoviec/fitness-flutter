@@ -97,10 +97,19 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 15,),
               Container(
                 height: 150,
-                color: Colors.green,
-                child: ListView.builder(
+                color: Colors.white,
+                child: ListView.separated(
+                  itemCount: categories.length,
+                  scrollDirection: Axis.horizontal,
+                  separatorBuilder: (context, index) => SizedBox(width: 25,),
                   itemBuilder: (context, index){
-                    return Container();
+                    return Container(
+                      height: 50,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: categories[index].boxColor
+                      ),
+                    );
                   },
                 ),
               )
